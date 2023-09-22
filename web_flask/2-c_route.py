@@ -30,8 +30,7 @@ def ctext(text):
     """
     returns a text message
     """
-    text = text.replace("_", " ")
-    return "c {}".format(text)
+    return 'C {}'.format(escape(text).replace('_', ' '))
 
 
 if __name__ == "__main__":
